@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Challenge Exercsie</title>
+        <style>
+            .shirt-photo{
+                height: 200px;
+            }
+            .challenge1{
+                position: relative;
+                display: inline-block;
+                top: 20px;
+                left: 20px;
+            }
+            .discount{
+                color: white;
+                background-color: black;
+                font-size: 9px;
+                padding: 5px 6px;
+                position: absolute;
+                top: 4px;
+                right: 0px;
+            }
+            .challenge2{
+                position: relative;
+                display: inline-block;
+                top: 20px;  
+                left: 40px;
+            }
+            .banner{
+                font-size: 6px;
+                font-family: Arial, Helvetica, sans-serif;
+                position: absolute;
+                top: 6px;
+                left: 3px;
+                background-color: lightcoral;
+                border-radius: 30px;
+                padding: 2px 5px;
+            }
+            .banner2{
+                font-size: 6px;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: lightgray;
+                border-radius: 20px;
+                position: absolute;
+                top: 6px;
+                right: 3px;padding: 2px 5px;
+            }
+            .overlay{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.817);
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                position: absolute;
+                bottom: 0px;
+                height: 50px;
+            }
+            .cart-button{
+                padding: 6px 10px;
+                font-size: 8px;
+                background-color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                border-width: 1px;
+                border-style: solid;
+                border-color: black;
+            }
+            .favourite{
+                display: flex;
+                background-color: black;
+                color: white;
+                height: 20px;
+                justify-content: center;
+                align-items: center;
+                column-gap: 9px;
+                font-size: 9px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 3px 9px; 
+                border-radius: 30px;
+            }
+            .cart-button:hover, .favourite:hover{
+                cursor: pointer;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, .8);
+            }
+            .cart-button:active, .favourite:active{
+                opacity: .7;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="challenge1">
+            <img class="shirt-photo" src="shirt.jpeg">
+            <div class="discount">
+                20% OFF
+            </div>
+        </div>
+        <div class="challenge2">
+            <img class="shirt-photo" src="shirt.jpeg">
+            <div class="banner">
+                2 WATCHED IN THE LAST 24 HOURS
+            </div>
+            <div class="banner2">
+                1 of 11
+            </div>
+            <div class="overlay">
+               <button class="cart-button">
+                    Add to Cart
+               </button>
+               <div class="favourite">
+                        <p>4</p>
+                        <p style="color: coral; font-weight: bolder;">&#9825;</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
